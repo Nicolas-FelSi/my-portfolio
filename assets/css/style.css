@@ -1,0 +1,116 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: var(--blue-dark-color);
+    padding: 1rem 1rem;
+    border-radius: 0 0 .5rem .5rem;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+h2 {
+    border-bottom: 3px solid var(--blue-dark-color);
+    margin-top: 1rem;
+}
+
+.nav__list {
+    flex-basis: 100%;
+    text-align: center;
+      
+    border-radius: .25rem;
+    margin: 1rem 0 -.5rem 0;
+}
+
+.nav__list ul {
+    width: 100%;
+}
+
+.nav__list li {
+    padding: .5rem;
+    margin-bottom: .5rem;
+    background-color: var(--white-color);
+    border-radius: .25rem;
+}
+
+.nav__list-item {
+    color: var(--blue-dark-color);
+}
+
+main {
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+.introduction__title {
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    margin-bottom: 1rem;
+}
+
+.introduction__title span {
+    color: var(--blue-dark-color);
+}
+
+.introduction__text {
+    color: rgb(83, 83, 83);
+}
+
+.introduction__knowledge {
+    margin-top: 2rem;
+}
+
+.introduction__knowledge__list, .introduction__interest__list{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.introduction__knowledge__list li, .introduction__interest__list li {
+    padding: 1rem;
+    background-color: var(--blue-light-color);
+    border-radius: .25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .25rem;
+
+    transition: .5s ease;
+}
+
+.introduction__knowledge__list li:hover {
+    background-color: var(--blue-color);
+    transform: scale(1.2);
+}
+
+article img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.star-html::after { content: "⭐⭐⭐⭐"; }
+.star-css::after { content: "⭐⭐⭐⭐"; }
+.star-sass::after { content: "⭐⭐"; }
+.star-js::after { content: "⭐⭐⭐"; }
+.star-git::after { content: "⭐⭐⭐"; }
+.star-gh::after { content: "⭐⭐⭐"; }
+.star-vsc::after { content: "⭐⭐⭐⭐"; }
+
+.introduction__interest__list li:first-child {
+    background-color: transparent;
+}

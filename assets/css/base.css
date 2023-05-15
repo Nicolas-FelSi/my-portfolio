@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-family: var(--rubik);
+}
+
+/* light-theme */
+:root {
+    --blue-dark-color: #0583F2; 
+    --blue-secondary-dark-color: #0597F2; 
+    --blue-color: #57B7F2; 
+    --blue-light-color: #5EC8F2; 
+    --white-color: #DFEFF2;
+    
+    --rubik: "Rubik", sans-serif;
+    --montserrat: "Montserrat", sans-serif;
+}
+
+/* dark-theme */
+:root {
+    --primary-color: #42208C; 
+    --secondary-color: #322073; 
+    --terciary-color: #202359; 
+    --dark-color: #0D2840; 
+    --light-color: #50D4F2; 
+}
+.hide {
+    display: none;
+}
