@@ -8,6 +8,14 @@
     font-family: var(--rubik);
 }
 
+a {
+    color: transparent;
+}
+
+i {
+    color: black;
+}
+
 /* light-theme */
 :root {
     --blue-dark-color: #0583F2; 
