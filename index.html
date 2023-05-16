@@ -5,41 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu portfófio</title>
     <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">     
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/judging stare.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <a href="#home">
-            <i class="fa-solid fa-house"></i>
-        </a>
-        <i class="fa-solid fa-bars"></i>
-        <nav class="nav__list hide">
-            <ul>
-                <li>
-                    <a class="nav__list-item" href="#about">Sobre</a>
-                </li>
-                <li>
-                    <a class="nav__list-item" href="#projetos">Projetos</a>
-                </li>
-                <li>
-                    <a class="nav__list-item" href="#contact">Contato</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header__content">
+            <a href="#home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <img class="light" src="./assets/images/sun basking.png" alt="imagem bitmoji no sol">
+                <img class="dark hide" src="./assets/images/flashlight.png" alt="imagem bitmoji com lanterna">
+            </div>
+            <i class="fa-solid fa-bars"></i>
+            <nav class="nav__list hide">
+                <ul>
+                    <li>
+                        <a class="nav__list-item" href="#knowledge">Conhecimentos</a>
+                    </li>
+                    <li>
+                        <a class="nav__list-item" href="#interests">Interesses</a>
+                    </li>
+                    <li>
+                        <a class="nav__list-item" href="#projects">Projetos</a>
+                    </li>
+                    <li>
+                        <a class="nav__list-item" href="#clone-sites">Sites clones</a>
+                    </li>
+                    <li>
+                        <a class="nav__list-item" href="#about">Sobre</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="home" class="introduction">
-            <h1 class="introduction__title">Olá, me chamo Nicolas e pretendo ser um desenvolvedor
-                especialista em <span>front-end</span>.
-            </h1>
-            <p class="introduction__text">No momento sei mexer com HTML5, CSS3, um pouco com SASS, e estou em
-                busca de saber Javascript avançado, para depois partir para TypeScript,
-                frameworks e bibliotecas JS.
-            </p>
+            <div class="introduction__content">
+                <div>
+                    <h1 class="introduction__title">Olá, me chamo Nicolas e pretendo ser um desenvolvedor
+                        especialista em <span>front-end</span>.
+                    </h1>
+                    <p class="introduction__text">No momento sei mexer com HTML5, CSS3, um pouco com SASS, e estou em
+                        busca de saber Javascript avançado, para depois partir para TypeScript,
+                        frameworks e bibliotecas JS.
+                    </p>
+                    <div>
+                        <a class="download" href="assets/images/curriculo.pdf" download="curriculo-nicolas.pdf">Download CV</a>
+                    </div>
+                </div>
+                <div class="introduction__img">
+                    <img class="img-light-mode" src="./assets/images//welcome classroom.png" alt="imagem bitmoji dando boas vindas">
+                    <img class="img-dark-mode hide" src="./assets/images/lampshade.png" alt="imagem bitmoji com a luz acesa">
+                </div>
+            </div>
             <article>
-                <div class="introduction__knowledge">
+                <div id="knowledge" class="introduction__knowledge">
                     <h2>Conhecimentos</h2>
                     <ul class="introduction__knowledge__list">
                         <li>
@@ -51,28 +80,32 @@
                             <span class="star-css"></span>
                         </li>
                         <li>
-                            <img src="./assets/images/sass.svg" alt="icone em svg do sass">
-                            <span class="star-sass"></span>
+                            <img src="./assets/images/vscode.svg" alt="icone em svg do vscode">
+                            <span class="star-vsc"></span>
                         </li>
                         <li>
                             <img src="./assets/images/javascript.svg" alt="icone em svg do javascript">
                             <span class="star-js"></span>
                         </li>
                         <li>
-                            <img src="./assets/images/git.svg" alt="icone em svg do git">
-                            <span class="star-git"></span>
-                        </li>
-                        <li>
                             <img src="./assets/images/github.svg" alt="icone em svg do github">
                             <span class="star-gh"></span>
                         </li>
                         <li>
-                            <img src="./assets/images/vscode.svg" alt="icone em svg do vscode">
-                            <span class="star-vsc"></span>
+                            <img src="./assets/images/git.svg" alt="icone em svg do git">
+                            <span class="star-git"></span>
+                        </li>
+                        <li>
+                            <img src="./assets/images/sass.svg" alt="icone em svg do sass">
+                            <span class="star-sass"></span>
+                        </li>
+                        <li>
+                            <img src="./assets/images/figma.svg" alt="icone em svg do figma">
+                            <span class="star-figma"></span>
                         </li>
                     </ul>
                 </div>
-                <div class="introduction__interest">
+                <div id="interests" class="introduction__interest">
                     <h2>Interesses</h2>
                     <ul class="introduction__interest__list">
                         <li>
@@ -94,6 +127,34 @@
                 </div>
             </article>
         </section>
+        <section id="projects" class="projects">
+            <h2>Projetos em andamento...</h2>
+        </section>
+        <section id="clone-sites">
+            <h2>Clones de projetos em andamento...</h2>
+        </section>
+        <section id="about" class="about">
+            <div>
+                <h2>Sobre</h2>
+                <p class="about__text">
+                    Me chamo Nicolas Felipe, tenho 20 anos, e estou em busca de meu
+                    primeiro emprego como desenvolvedor front-end, fazendo cursos
+                    front-end focados nas tecnologias que pretendo utilizar
+                    futuramente. Sempre evoluindo na área para crescer nesse mercado que
+                    possui diversas oportunidades, e estou sempre pegando projetos e desafios
+                    para aperfeiçoar minhas habilidades.
+                </p>
+                <p class="about__text">
+                    No momento estou no programa Desenvolve 2023, que é uma parceria entre
+                    Grupo Boticário e Alura, com mentorias dos profissionais do Grupo Boticário
+                    e da Alura, junto com a trilha Full Stack com uma ótima didática e diversos
+                     projetos fornecidos pela Alura. Modulos fornecidos no curso que são de meu
+                     interesse são html/css/js, figma, reactjs, e typescript, desde o básico ao
+                     avançado.
+                </p>
+            </div>
+            <img class="hide" src="./assets/images/studying.png" alt="imagem bitmoji estudando">
+        </section>
     </main>
     <footer>
         <ul class="social-media__list">
@@ -102,7 +163,7 @@
                     <i class="fa-brands fa-linkedin"></i>
                 </a>       
             </li>
-            
+
             <li>
                 <a href="https://github.com/Nicolas-FelSi" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-github"></i>

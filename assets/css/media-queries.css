@@ -1,0 +1,116 @@
+@media screen and (min-width: 940px) {
+    header, footer {
+        padding: .5rem 1rem;
+    }
+    
+    .nav__list {
+        flex-basis: 0;
+        margin: 0;
+    }
+
+    .nav__list ul {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+    }
+    
+    .nav__list li {
+        margin-bottom: .25rem;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        transition: .5s ease;
+    }
+
+    .nav__list-item {
+        padding: .5rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 8rem;
+        color: var(--light-color);
+    }
+
+    .nav__list-item:hover {
+        color: var(--secondary-color);
+        background-color: var(--light-color);
+    }
+    
+    .introduction__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .introduction__content > div {
+        max-width: 100%;
+    }
+
+    .introduction__img {
+        display: inline-block;
+    }
+
+    .introduction__img img{
+        max-width: 25rem;
+    }
+
+    .introduction__knowledge__list li, .introduction__interest__list li {
+        width: 40%;
+    }
+
+    .about {
+        margin-bottom: 7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about img {
+        display: inline-block;
+        width: 20rem;
+    }
+
+    footer {
+        padding: 1rem;
+        border-radius: .5rem;
+        box-shadow: 0 0 20px var(--terciary-color);
+    }
+
+    .social-media__list a {
+        padding: 1rem;
+        transition: .5s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .introduction__title, h2 {
+        font-size: 2rem;
+    }
+
+    p, a {
+        font-size: 1rem;
+    }
+
+    .light, .dark {
+        width: 4rem;
+    }
+
+    main {
+        margin-top: 9rem;
+    }
+
+    .nav__list-item {
+        width: 11rem;
+    }
+
+    .fa-solid, .fa-brands:before {
+        font-size: 2rem; 
+    }
+
+    article img {
+        height: 6rem;
+    }
+}
