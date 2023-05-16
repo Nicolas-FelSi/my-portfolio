@@ -19,7 +19,10 @@ inputDarkMode.addEventListener("click", () => {
     tagHtml.classList.toggle("dark-theme")
 })
 
-window.onresize = () => {
+window.onload = onLoadPage
+window.onresize = onResizePage
+
+function onLoadPage() {
     if (window.matchMedia("(min-width: 940px)").matches) {
         toggleHeader.remove()
         if (navList.classList.contains("hide")) {
@@ -31,5 +34,11 @@ window.onresize = () => {
         if (!navList.classList.contains("hide")) {
             navList.classList.add("hide")
         }
-    }
+    } 
 }
+
+function onResizePage() {
+    onLoadPage()
+}
+
+
