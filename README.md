@@ -5,9 +5,9 @@ style="color: #0583F2; border-bottom: 3px solid #0583F2">
     Layout mobile
 </h2>
 <h3 style="color: #5EC8F2">Light theme</h3>
-<img src="./assets/readme-images/light-theme.jpg"></img>
+<img width="40%" src="./assets/readme-images/light-theme.jpg"></img>
 <h3 style="color: #42208C">Dark theme</h3>
-<img src="./assets/readme-images/dark-theme.jpg"></img>
+<img width="40%" src="./assets/readme-images/dark-theme.jpg"></img>
 
 <hr style="margin: 50px 0">
 
@@ -17,9 +17,9 @@ style="color: #0D2840; border-bottom: 3px solid #0D2840">
     Layout desktop
 </h2>
 <h3 style="color: #5EC8F2">Light theme</h3>
-<img width="200px" src="./assets/readme-images/light-theme-desktop.png"></img>
+<img src="./assets/readme-images/light-theme-desktop.png"></img>
 <h3 style="color: #42208C">Dark theme</h3>
-<img width="200px" src="./assets/readme-images/dark-theme-desktop.png"></img>
+<img src="./assets/readme-images/dark-theme-desktop.png"></img>
 
 <hr style="margin: 50px 0">
 
