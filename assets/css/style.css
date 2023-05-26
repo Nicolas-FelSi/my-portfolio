@@ -72,7 +72,7 @@ h2 {
 
 .nav__list-item {
     color: var(--dark-color);
-    padding: .5rem .5rem;
+    padding: .5rem 30%;
 }
 
 /* SWITCH */
