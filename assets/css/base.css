@@ -18,11 +18,11 @@ i {
 
 /* light-theme */
 :root {
-    --primary-color: #0597F2; 
-    --secondary-color: #57B7F2; 
-    --terciary-color: #5EC8F2; 
-    --dark-color: #0583F2; 
-    --light-color: #DFEFF2;
+    --primary-color: #14213D; 
+    --secundary-color: #FCA311; 
+    --terciary-color: #d4d4d4; 
+    --dark-color: #000000; 
+    --light-color: #FFFFFF;
     
     --rubik: "Rubik", sans-serif;
     --montserrat: "Montserrat", sans-serif;

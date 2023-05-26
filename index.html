@@ -1,191 +1,241 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portfófio</title>
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/media-queries.css">
-    <link rel="stylesheet" href="assets/css/dark-mode.css">     
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Rubik&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/images/judging-stare.webp" type="image/x-icon">    
-    <script src="https://kit.fontawesome.com/51b23194c0.js" defer crossorigin="anonymous"></script>
-    <script src="./assets/js/main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu portfófio</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/media-queries.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Rubik&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/images/webp/judging-stare.webp" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/51b23194c0.js" defer crossorigin="anonymous"></script>
+  <script src="./assets/js/main.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <div class="header__content">
-            <a aria-label="Link para voltar no início da página" href="#home">
-                <i class="fa-solid fa-house"></i>
-            </a>
-            <div>
-                <label for="switchDarkLight" class="switch">
-                    <input id="switchDarkLight" type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-                <img class="light" src="./assets/images/sun-basking.webp" alt="imagem bitmoji no sol">
-                <img class="dark hide" src="./assets/images/flashlight.webp" alt="imagem bitmoji com lanterna">
-            </div>
-            <i class="fa-solid fa-bars"></i>
-            <nav class="nav__list hide">
-                <ul>
-                    <li>
-                        <a class="nav__list-item" href="#knowledge">Conhecimentos</a>
-                    </li>
-                    <li>
-                        <a class="nav__list-item" href="#interests">Interesses</a>
-                    </li>
-                    <li>
-                        <a class="nav__list-item" href="#projects">Projetos</a>
-                    </li>
-                    <li>
+
+  <header>
+    <div class="header__content">
+      <a aria-label="Link para voltar no início da página" href="#home">
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <div>
+        <label for="switchDarkLight" class="switch">
+          <input id="switchDarkLight" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <img class="light" src="./assets/images/webp/sun-basking.webp" alt="imagem bitmoji no sol">
+        <img class="dark hide" src="./assets/images/webp/flashlight.webp" alt="imagem bitmoji com lanterna">
+      </div>
+      <i class="fa-solid fa-bars"></i>
+      <nav class="nav__list hide">
+        <ul>
+          <li>
+            <a class="nav__list-item" href="#knowledge">Conhecimentos</a>
+          </li>
+          <li>
+            <a class="nav__list-item" href="#interests">Interesses</a>
+          </li>
+          <li>
+            <a class="nav__list-item" href="#projects">Projetos</a>
+          </li>
+          <!-- <li>
                         <a class="nav__list-item" href="#clone-sites">Sites clones</a>
-                    </li>
-                    <li>
-                        <a class="nav__list-item" href="#about">Sobre</a>
-                    </li>
-                </ul>
-            </nav>
+                    </li> -->
+          <li>
+            <a class="nav__list-item" href="#about">Sobre</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="introduction">
+      <div class="introduction__content">
+        <div>
+          <h1 class="introduction__title">Olá, me chamo Nicolas e pretendo ser um desenvolvedor
+            especialista em <span>front-end</span>.
+          </h1>
+          <p class="introduction__text">No momento sei mexer com HTML5, CSS3, um pouco com SASS, e estou em
+            busca de saber Javascript avançado, para depois partir para TypeScript,
+            frameworks e bibliotecas JS.
+          </p>
+          <div>
+            <a class="download" href="assets/images/curriculo.pdf" download="curriculo-nicolas.pdf">Download CV</a>
+          </div>
         </div>
-    </header>
-    <main>
-        <section id="home" class="introduction">
-            <div class="introduction__content">
-                <div>
-                    <h1 class="introduction__title">Olá, me chamo Nicolas e pretendo ser um desenvolvedor
-                        especialista em <span>front-end</span>.
-                    </h1>
-                    <p class="introduction__text">No momento sei mexer com HTML5, CSS3, um pouco com SASS, e estou em
-                        busca de saber Javascript avançado, para depois partir para TypeScript,
-                        frameworks e bibliotecas JS.
-                    </p>
-                    <div>
-                        <a class="download" href="assets/images/curriculo.pdf" download="curriculo-nicolas.pdf">Download CV</a>
-                    </div>
-                </div>
-                <div class="introduction__img">
-                    <img class="img-light-mode" src="./assets/images/welcome-classroom.webp" alt="imagem bitmoji dando boas vindas">
-                    <img class="img-dark-mode hide" src="./assets/images/lampshade.webp" alt="imagem bitmoji com a luz acesa">
-                </div>
-            </div>
-            <article>
-                <div id="knowledge" class="introduction__knowledge">
-                    <h2>Conhecimentos</h2>
-                    <ul class="introduction__knowledge__list">
-                        <li>
-                            <img src="./assets/images/html.svg" alt="icone em svg do html">
-                            <span class="star-html"></span>
-                        </li>
-                        <li>
-                            <img src="./assets/images/css.svg" alt="icone em svg do css">
-                            <span class="star-css"></span>
-                        </li>
-                        <li>
-                            <img src="./assets/images/vscode.svg" alt="icone em svg do vscode">
-                            <span class="star-vsc"></span>
-                        </li>
-                        <li>
-                            <img src="./assets/images/javascript.svg" alt="icone em svg do javascript">
-                            <span class="star-js"></span>
-                        </li>
-                        <li>
-                            <img src="./assets/images/github.svg" alt="icone em svg do github">
-                            <span class="star-gh"></span>
-                        </li>
-                        <li>
-                            <img src="./assets/images/git.svg" alt="icone em svg do git">
-                            <span class="star-git"></span>
-                        </li>
-                        <li>
-                            <img src="./assets/images/sass.svg" alt="icone em svg do sass">
-                            <span class="star-sass"></span>
-                        </li>
-                        <li>
-                            <img src="./assets/images/figma.svg" alt="icone em svg do figma">
-                            <span class="star-figma"></span>
-                        </li>
-                    </ul>
-                </div>
-                <div id="interests" class="introduction__interest">
-                    <h2>Interesses</h2>
-                    <ul class="introduction__interest__list">
-                        <li>
-                            <img src="./assets/images/reactjs.svg" alt="icone em svg do reactjs">
-                        </li>
-                        <li>
-                            <img src="./assets/images/angular.svg" alt="icone em svg do angularjs">
-                        </li>
-                        <li>
-                            <img src="./assets/images/vue.svg" alt="icone em svg do vuejs">
-                        </li>
-                        <li>
-                            <img src="./assets/images/linux.svg" alt="icone em svg do linux">
-                        </li>
-                        <li>
-                            <img src="./assets/images/typescript.svg" alt="icone em svg do typescript">
-                        </li>
-                    </ul>
-                </div>
-            </article>
-        </section>
-        <section id="projects" class="projects">
-            <h2>Projetos em andamento...</h2>
-        </section>
-        <section id="clone-sites">
+        <div class="introduction__img">
+          <img class="img-light-mode" src="./assets/images/webp/welcome-classroom.webp"
+            alt="imagem bitmoji dando boas vindas">
+          <img class="img-dark-mode hide" src="./assets/images/webp/lampshade.webp"
+            alt="imagem bitmoji com a luz acesa">
+        </div>
+      </div>
+      <article>
+        <div id="knowledge" class="introduction__knowledge">
+          <h2>Conhecimentos</h2>
+          <ul class="introduction__knowledge__list">
+            <li>
+              <img src="./assets/images/svg/html.svg" alt="icone em svg do html">
+              <span class="star-html"></span>
+            </li>
+            <li>
+              <img src="./assets/images/svg/css.svg" alt="icone em svg do css">
+              <span class="star-css"></span>
+            </li>
+            <li>
+              <img src="./assets/images/svg/vscode.svg" alt="icone em svg do vscode">
+              <span class="star-vsc"></span>
+            </li>
+            <li>
+              <img src="./assets/images/svg/javascript.svg" alt="icone em svg do javascript">
+              <span class="star-js"></span>
+            </li>
+            <li>
+              <img src="./assets/images/svg/github.svg" alt="icone em svg do github">
+              <span class="star-gh"></span>
+            </li>
+            <li>
+              <img src="./assets/images/svg/git.svg" alt="icone em svg do git">
+              <span class="star-git"></span>
+            </li>
+            <li>
+              <img src="./assets/images/svg/sass.svg" alt="icone em svg do sass">
+              <span class="star-sass"></span>
+            </li>
+            <li>
+              <img src="./assets/images/svg/figma.svg" alt="icone em svg do figma">
+              <span class="star-figma"></span>
+            </li>
+          </ul>
+        </div>
+        <div id="interests" class="introduction__interest">
+          <h2>Interesses</h2>
+          <ul class="introduction__interest__list">
+            <li>
+              <img src="./assets/images/svg/reactjs.svg" alt="icone em svg do reactjs">
+            </li>
+            <li>
+              <img src="./assets/images/svg/angular.svg" alt="icone em svg do angularjs">
+            </li>
+            <li>
+              <img src="./assets/images/svg/vue.svg" alt="icone em svg do vuejs">
+            </li>
+            <li>
+              <img src="./assets/images/svg/linux.svg" alt="icone em svg do linux">
+            </li>
+            <li>
+              <img src="./assets/images/svg/typescript.svg" alt="icone em svg do typescript">
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <section id="projects" class="projects">
+      <div>
+        <h2>Projetos</h2>
+        <ul class="projects__list">
+          <li class="projects__list-item">
+            <span class="projects__languages"></span>   
+            <img class="projects__img" src="./assets/images/webp/projeto1.webp" alt="projetos que fiz e coloquei aqui">
+            <span class="projects__links">
+              <a href="https://nicolas-felsi.github.io/front-end-mentor-praticando/results-summary-component/"
+                target="_blank" rel="noopener noreferrer">Projeto</a>
+              <a href="https://github.com/Nicolas-FelSi/front-end-mentor-praticando" target="_blank"
+                rel="noopener noreferrer">Repositório</a>
+            </span>
+          </li>
+
+          <li class="projects__list-item">
+            <span class="projects__languages"></span>    
+            <img class="projects__img" src="./assets/images/webp/projeto2.webp" alt="projetos que fiz e coloquei aqui">
+            <span class="projects__links">
+              <a href="https://nicolas-felsi.github.io/front-end-mentor-praticando/product-preview-card-component-main/"
+                target="_blank" rel="noopener noreferrer">Projeto</a>
+              <a href="https://github.com/Nicolas-FelSi/front-end-mentor-praticando" target="_blank"
+                rel="noopener noreferrer">Repositório</a>
+            </span>
+          </li>
+
+          <li class="projects__list-item">
+            <span class="projects__languages">
+              <span class="projects__js"></span>   
+            </span>  
+            <img class="projects__img" src="./assets/images/webp/projeto3.webp" alt="projetos que fiz e coloquei aqui">
+            <span class="projects__links">
+              <a href="https://nicolas-felsi.github.io/projetos-aleatorios/form-cep/"
+                target="_blank" rel="noopener noreferrer">Projeto</a>
+              <a href="https://github.com/Nicolas-FelSi/projetos-aleatorios" target="_blank"
+                rel="noopener noreferrer">Repositório</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- <section id="clone-sites">
             <h2>Clones de projetos em andamento...</h2>
-        </section>
-        <section id="about" class="about">
-            <div>
-                <h2>Sobre</h2>
-                <p class="about__text">
-                    Me chamo Nicolas Felipe, tenho 20 anos, e estou em busca de meu
-                    primeiro emprego como desenvolvedor front-end, fazendo cursos
-                    front-end focados nas tecnologias que pretendo utilizar
-                    futuramente. Sempre evoluindo na área para crescer nesse mercado que
-                    possui diversas oportunidades, e estou sempre pegando projetos e desafios
-                    para aperfeiçoar minhas habilidades.
-                </p>
-                <p class="about__text">
-                    No momento estou no programa Desenvolve 2023, que é uma parceria entre
-                    Grupo Boticário e Alura, com mentorias dos profissionais do Grupo Boticário
-                    e da Alura, junto com a trilha Full Stack com uma ótima didática e diversos
-                     projetos fornecidos pela Alura. Modulos fornecidos no curso que são de meu
-                     interesse são html/css/js, figma, reactjs, e typescript, desde o básico ao
-                     avançado.
-                </p>
-            </div>
-            <img class="hide" src="./assets/images/studying.webp" alt="imagem bitmoji estudando">
-        </section>
-    </main>
-    <footer>
-        <ul class="social-media__list">
-            <li>
-                <a aria-label="link para meu linkedin" href="https://www.linkedin.com/in/nicolasfelsidev/" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>       
-            </li>
-
-            <li>
-                <a aria-label="link para meu github" href="https://github.com/Nicolas-FelSi" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-github"></i>
-                </a>   
-            </li>
-
-            <li>
-                <a aria-label="link para meu instagram" href="https://www.instagram.com/nicolas_felsi/" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>        
-            </li>
-
-            <li>
-                <a aria-label="link para meu whatsapp" href="https://wa.me/5547984453110" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>                
-            </li>
-        </ul>  
-    </footer>
-
+        </section> -->
+    <section id="about" class="about">
+      <div>
+        <div class="about__content">
+          <div>
+            <h2>Sobre</h2>
+            <p class="about__text">
+              Me chamo Nicolas Felipe, tenho 20 anos, e estou em busca de meu
+              primeiro emprego como desenvolvedor front-end, gostaria de uma oportunidade
+              para que eu pudesse me desenvolver na área, pois a parte visual me chama muito
+              a atenção.
+            </p>
+          </div>
+          <div class="about__profile">
+            <h2>Meu perfil</h2>
+              <div class="about__profile-text">
+                <p>Nome: Nicolas Felipe da Silva</p>
+                <p>Stack: Front-End</p>
+                <p>Aniversário: 03/07/2002</p>
+                <p>Email: nicolasfelipe3702@gmail.com</p>
+                <p>Linguagens rotineiras: HTML, CSS, JavaScript</p>
+              </div>
+          </div>
+        </div>
+        <div class="about__img">
+          <img class="hide" src="./assets/images/webp/studying.webp" alt="imagem bitmoji estudando">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <ul class="social-media__list">
+      <li>
+        <a aria-label="link para meu linkedin" href="https://www.linkedin.com/in/nicolasfelsidev/" target="_blank"
+          rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a aria-label="link para meu github" href="https://github.com/Nicolas-FelSi" target="_blank"
+          rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a aria-label="link para meu instagram" href="https://www.instagram.com/nicolas_felsi/" target="_blank"
+          rel="noopener noreferrer">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a aria-label="link para meu whatsapp" href="https://wa.me/5547984453110" target="_blank"
+          rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
 
 </body>
+
 </html>
