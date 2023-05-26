@@ -1,15 +1,15 @@
 #Portfólio em construção...
-<!-- <h2 
+<h2 
 class="blue__titulo"
 style="color: #0583F2; border-bottom: 3px solid #0583F2">
     Layout mobile
 </h2>
 <h3 style="color: #5EC8F2">Light theme</h3>
-<img width="40%" src="./assets/readme-images/light-theme.jpg"></img>
+<img width="40%" src="./assets/readme-images/light-theme.webp"></img>
 <h3 style="color: #42208C">Dark theme</h3>
-<img width="40%" src="./assets/readme-images/dark-theme.jpg"></img>
+<img width="40%" src="./assets/readme-images/dark-theme.webp"></img>
 
-<hr style="margin: 50px 0"> -->
+<hr style="margin: 50px 0">
 
 <h2 
 class="dark__titulo"
